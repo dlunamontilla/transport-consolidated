@@ -1,0 +1,8 @@
+# Elemenentos que no forman parte del proyecto:
+Herramientas
+*/*.md
+.sass-cache
+.vscode
+*.sql
+upload
+uploads

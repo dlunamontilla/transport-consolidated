@@ -1,0 +1,106 @@
+.frontal {
+	transition: 300ms ease;
+
+	&--base,
+	&--base-hover:hover {
+		color: $color-base;
+	}
+
+	&--secundario,
+	&--secundario-hover:hover {
+		color: $color-secundario;
+	}
+
+	&--whatsapp,
+	&--whatsapp-hover:hover {
+		color: $color-whatsapp;
+	}
+
+	&--facebook,
+	&--facebook-hover:hover {
+		color: $color-facebook;
+	}
+
+	&--twitter,
+	&--twitter-hover:hover {
+		color: $color-twitter;
+	}
+
+	&--youtube,
+	&--youtube-hover:hover {
+		color: $color-youtube;
+	}
+
+	&--pinterest,
+	&--pinterest-hover:hover {
+		color: $color-pinterest;
+	}
+
+	&--linkedin,
+	&--linkedin-hover:hover {
+		color: $color-linkedin
+	}
+
+	&--skype,
+	&--skype-hover:hover {
+		color: $color-skype;
+	}
+}
+
+.fondo {
+	transition: 300ms ease;
+
+	&--base,
+	&--base-hover:hover {
+		background-color: $color-base;
+		fill: $color-base;
+	}
+
+	&--secundario,
+	&--secundario-hover:hover {
+		background-color: $color-secundario;
+		fill: $color-secundario;
+	}
+
+	&--whatsapp,
+	&--whatsapp-hover:hover {
+		background-color: $color-whatsapp;
+		fill: $color-whatsapp;
+	}
+
+	&--facebook,
+	&--facebook-hover:hover {
+		background-color: $color-facebook;
+		fill: $color-facebook;
+	}
+
+	&--twitter,
+	&--twitter-hover:hover {
+		background-color: $color-twitter;
+		fill: $color-twitter;
+	}
+
+	&--youtube,
+	&--youtube-hover:hover {
+		background-color: $color-youtube;
+		fill: $color-youtube;
+	}
+
+	&--pinterest,
+	&--pinterest-hover:hover {
+		background-color: $color-pinterest;
+		fill: $color-pinterest;
+	}
+
+	&--linkedin,
+	&--linkedin-hover:hover {
+		background-color: $color-linkedin;
+		fill: $color-linkedin;
+	}
+
+	&--skype,
+	&--skype-hover:hover {
+		background-color: $color-skype;
+		fill: $color-skype;
+	}
+}
