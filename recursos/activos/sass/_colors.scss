@@ -1,106 +1,130 @@
 .frontal {
-	transition: 300ms ease;
+	--color: #{darken( white, 70 )};
+	
+	color: var(--color);
+
+	&, path {
+		transition: 300ms ease;
+	}
+
+	path {
+		fill: var(--color);
+	}
 
 	&--base,
 	&--base-hover:hover {
-		color: $color-base;
+		--color: #{$color-base};
 	}
 
 	&--secundario,
 	&--secundario-hover:hover {
-		color: $color-secundario;
+		--color: #{$color-secundario};
 	}
 
 	&--whatsapp,
 	&--whatsapp-hover:hover {
-		color: $color-whatsapp;
+		--color: #{$color-whatsapp};
+
+		path {
+			fill: var( --color );
+		}
 	}
 
 	&--facebook,
 	&--facebook-hover:hover {
-		color: $color-facebook;
+		--color: #{$color-facebook};
+	}
+
+	&--instagram,
+	&--instagram-hover:hover {
+		--color: #{$color-instagram};
 	}
 
 	&--twitter,
 	&--twitter-hover:hover {
-		color: $color-twitter;
+		--color: #{$color-twitter};
 	}
 
 	&--youtube,
 	&--youtube-hover:hover {
-		color: $color-youtube;
+		--color: #{$color-youtube};
 	}
 
 	&--pinterest,
 	&--pinterest-hover:hover {
-		color: $color-pinterest;
+		--color: #{$color-pinterest};
 	}
 
 	&--linkedin,
 	&--linkedin-hover:hover {
-		color: $color-linkedin
+		--color: #{$color-linkedin};
 	}
 
 	&--skype,
 	&--skype-hover:hover {
-		color: $color-skype;
+		--color: #{$color-skype};
 	}
 }
 
 .fondo {
+	--color: #{darken( white, 70)};
+
 	transition: 300ms ease;
+	background-color: var(--color);
+	fill: var(--color);
 
 	&--base,
 	&--base-hover:hover {
-		background-color: $color-base;
-		fill: $color-base;
+		--color: #{$color-base};
 	}
 
 	&--secundario,
 	&--secundario-hover:hover {
-		background-color: $color-secundario;
-		fill: $color-secundario;
+		--color: #{$color-secundario};
 	}
 
 	&--whatsapp,
 	&--whatsapp-hover:hover {
-		background-color: $color-whatsapp;
-		fill: $color-whatsapp;
+		--color: #{$color-whatsapp};
 	}
 
 	&--facebook,
 	&--facebook-hover:hover {
-		background-color: $color-facebook;
-		fill: $color-facebook;
+		--color: #{$color-facebook};
+	}
+
+	&--instagram,
+	&--instagram-hover:hover {
+		--color: #{$color-instagram};
 	}
 
 	&--twitter,
 	&--twitter-hover:hover {
-		background-color: $color-twitter;
-		fill: $color-twitter;
+		--color: #{$color-twitter};
 	}
 
 	&--youtube,
 	&--youtube-hover:hover {
-		background-color: $color-youtube;
-		fill: $color-youtube;
+		--color: #{$color-youtube};
 	}
 
 	&--pinterest,
 	&--pinterest-hover:hover {
-		background-color: $color-pinterest;
-		fill: $color-pinterest;
+		--color: #{$color-pinterest};
 	}
 
 	&--linkedin,
 	&--linkedin-hover:hover {
-		background-color: $color-linkedin;
-		fill: $color-linkedin;
+		--color: #{$color-linkedin};
 	}
 
 	&--skype,
 	&--skype-hover:hover {
-		background-color: $color-skype;
-		fill: $color-skype;
+		--color: #{$color-skype};
+	}
+
+	&--blanco,
+	&--blanco-hover:hover {
+		--color: white;
 	}
 }

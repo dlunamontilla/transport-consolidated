@@ -177,3 +177,29 @@ pre, code {
     }
   }
 }
+
+.padding {
+  --padding: 5px;
+
+  &--left {
+    padding-left: var(--padding);
+  }
+
+  &--right {
+    padding-right: var(--padding);
+  }
+
+  &--horizontal {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+  }
+
+  &--vertical {
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+  }
+
+  &--all {
+    padding: var(--padding);
+  }
+}
