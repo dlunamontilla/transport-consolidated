@@ -6,3 +6,5 @@ Herramientas
 *.sql
 upload
 uploads
+multimedia/video
+multimedia/video/*
