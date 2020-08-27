@@ -46,114 +46,109 @@
 
 <body>
   <main id="app">
-    <header class="vista-previa">
-      <div class="video-animado" style="display: none">
-        <video src="multimedia/video/DroneVideo1.webm" autoplay="" loop="-1" constrols="" class="video-animado__clip"
-          preload=""></video>
-      </div>
-
-      <div class="content-header">
-        <div class="header">
-          <!-- Logotipo de la empresa -->
-          <div class="header__item header__item--logo" data-src="multimedia/vectores/logo-transport-consolidated.svg">
-          </div>
-
-          <!-- Informaciones y redes sociales -->
-          <div class="header__item header__item--info text--right">
-            <div class="redes-sociales">
-              <div class="frontal frontal--base">
-                Call us today!
-              </div>
-
-              <!-- WhatsApp -->
-              <div class="frontal frontal--whatsapp-hover flex flex--icon">
-                <span data-src="multimedia/vectores/whatsapp.svg" class="padding padding--right"></span>
-                <span class="frontal frontal--whatsapp-hover">(316) 350 5156</span>
-              </div>
-
-              <!-- Facebook e Instagram -->
-              <div class="flex flex--redes-sociales flex--right">
-                <!-- Instragram -->
-                <div class="frontal frontal--instagram-hover flex__item flex__item--redes-sociales"
-                  data-src="multimedia/vectores/instagram.svg"></div>
-
-                <!-- Facebook -->
-                <div class="frontal frontal--facebook-hover flex__item flex__item--redes-sociales"
-                  data-src="multimedia/vectores/facebook.svg"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Menú de navegación -->
-      <div class="flex flex--space-between width default max-width">
-        <nav class="flex__item flex__item--menu navigation text--variant">
-          <ul class="menu menu--vertical">
-            <li class="menu__item"><a class="menu__enlace frontal frontal--secundario-hover" href="#">HOME</a></li>
-            <li class="menu__item"><a class="menu__enlace frontal frontal--secundario-hover" href="#">About US</a></li>
-            <li class="menu__item"><a class="menu__enlace frontal frontal--secundario-hover" href="#">Services</a></li>
-            <li class="menu__item"><a class="menu__enlace frontal frontal--secundario-hover" href="#">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="flex__item flex__item--form form">
-          <h2>Get your free binding quote</h2>
-          <form action="#" method="post" id="form-contact">
-            <div class="form__content">
-              <label class="control">
-                <span class="control__caption">Move Date:</span>
-                <input type="text" name="move-date" id="move-date" class="control__text">
-              </label>
-              
-              <label class="control">
-                <span class="control__caption">First Name:</span>
-                <input type="text" name="first-name" id="first-date" class="control__text">
-              </label>
-              
-              <label class="control">
-                <span class="control__caption">Last Name:</span>
-                <input type="text" name="last-name" id="last-name" class="control__text">
-              </label>
-              
-              <label class="control">
-                <span class="control__caption">Email Address:</span>
-                <input type="text" name="email-address" id="email-address" class="control__text">
-              </label>
-              
-              <label class="control">
-                <span class="control__caption">Phone Number:</span>
-                <input type="text" name="phone-number" id="phone-number" class="control__text">
-              </label>
-              
-              <label class="control">
-                <span class="control__caption">Origin City, Sate & Zipcode</span>
-                <input type="text" name="origin-city" id="origin-city" class="control__text">
-              </label>
-
-              <label class="control">
-                <span class="control__caption">Destination City, Sate & Zipcode</span>
-                <input type="text" name="destination-city" id="destination-city" class="control__text">
-              </label>
-
-              <label class="control">
-                <span class="control__caption">Open or Enclosed?</span>
-                <input type="text" name="open-enclosed" id="open-enclosed" class="control__text">
-              </label>
-
-              <label class="control">
-                <span class="control__caption">Vehicle's Year/Make/Model</span>
-                <input type="text" name="origin-city" id="origin-city" class="control__text">
-              </label>
-            </div>
-
-            <div class="group-button text--center">
-              <button type="submit" class="button button--success">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
+    <header class="header">
     </header>
+
+    <div class="content">
+      <!-- Sección HOME -->
+      <section class="home">
+        <div class="fondo-animado"></div>
+        
+        <!-- Primera Columna -->
+        <div class="home__item">
+
+        </div>
+
+        <!-- Segunda columna -->
+        <div class="home__item">
+          <div class="formulario"></div>
+        </div>
+
+      </section>
+
+      <!-- Sección About -->
+      <section class="about">
+        <div class="marcaAgua" data-src="multimedia/vectores/marca-de-agua.svg"></div>
+
+        <div class="content-inner">
+          <div class="info">
+            <div class="info__item">
+              <div class="info__text">
+                <h2>ABOUT US</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores reprehenderit cum voluptas animi tempore cupiditate consequuntur natus in ipsum. Fugit harum suscipit ipsa facilis illum nemo labore, asperiores debitis!</p>
+              </div>
+
+              <div class="info__image">
+                <img src="multimedia/fotos/WebFleetOpenTransportation.png" alt="About US">
+              </div>
+            </div>
+
+            <div class="info__item">
+              <div class="info__text">
+                <h3>OUR GOAL</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores reprehenderit cum voluptas animi tempore cupiditate consequuntur natus in ipsum. Fugit harum suscipit ipsa facilis illum nemo labore, asperiores debitis!</p>
+              </div>
+
+              <div class="info__image">
+                <img src="multimedia/fotos/WebEnclosedTransportation1.png" alt="Our Goal">
+              </div>
+            </div>
+
+            <div class="info__item">
+              <div class="info__text">
+                <h3>EXPERIENCIE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores reprehenderit cum voluptas animi tempore cupiditate consequuntur natus in ipsum. Fugit harum suscipit ipsa facilis illum nemo labore, asperiores debitis!</p>
+              </div>
+
+              <div class="info__image">
+                <img src="multimedia/fotos/conjungo-camiones.jpeg" alt="Experience">
+              </div>
+            </div>
+
+            <div class="info__item">
+              <div class="info__text">
+                <h3>BOOK WITH US</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores reprehenderit cum voluptas animi tempore cupiditate consequuntur natus in ipsum. Fugit harum suscipit ipsa facilis illum nemo labore, asperiores debitis!</p>
+              </div>
+
+              <div class="info__image">
+                <img src="multimedia/fotos/WebEnclosedTransportation4.png" alt="Book with us">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Services -->
+      <section class="services">
+        <div class="services__inner">
+          <div class="services__item services__item--left">
+            <h2>SERVICES</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ab aut at est, eius vero fuga nobis consequuntur autem distinctio esse officia rerum qui iusto doloribus, id ad labore voluptates!</p>
+            <p>Eos voluptates nisi doloremque, totam quo quae sit error? Quia aperiam et optio sint animi consectetur consequuntur ipsam delectus. Omnis sequi pariatur neque soluta aut maxime quis consectetur adipisci sint.</p>
+
+            <h3>ENCLOSED TRANSPORTATION</h3>
+            <p></p>
+
+            <h3>OPEN TRANSPORTATION</h3>
+            <p></p>
+
+            <h3>DISCOUNTS</h3>
+            <p></p>
+          </div>
+
+          <div class="services__item services__item--right">
+            <img src="multimedia/fotos/carro-antiguo.jpeg" alt="Services">
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <footer class="contact">
+      <div class="marcaAgua" data-src="multimedia/vectores/marca-de-agua.svg"></div>
+    </footer>
   </main>
 </body>
 

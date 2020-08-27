@@ -1,6 +1,9 @@
 # Transport Consolidated
 
-Si deseas utilizar jQuery y/o Bootstrap solo tienes que descomentario sus CDN\'s
+Se utilizará esta etiqueta para colocar el vídeo de fondo en la página:
 
-Puede descomprimir la fuente tipográfica e instalarla en su equipo para que no tengas que tomarla de un CDN mientras se encuentre desarrollo su aplicación.
-Puede descomprimir la fuente tipográfica e instalarla en su equipo para que no tengas que tomarla de un CDN mientras se encuentre desarrollo su aplicación.
+``` html
+<div class="fondo-animado">
+    <video src="multimedia/video/DroneVideo1.webm" autoplay="" loop="-1" constrols="" class="video-animado__clip" preload=""></video>
+</div>
+```

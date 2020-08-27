@@ -1,6 +1,3 @@
-import { imagenSVG } from "./obtenerVectores.js";
+import { imagenSVG } from "./imagenSVG.js";
 
-// Probar la función:
 imagenSVG();
-
-console.log( "Esta es una prueba" );
