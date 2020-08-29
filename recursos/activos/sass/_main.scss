@@ -11,6 +11,24 @@ aside {
   min-height: 100px;
 }
 
+// Párrafos:
+.parrafo {
+  position: relative;
+  
+  &--title {
+    padding: 0;
+    margin: 0;
+  }
+
+  &--email {
+    margin-top: 0;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
 // Video que se utilizará de fondo:
 .fondo-animado {
   position: absolute;
@@ -45,6 +63,14 @@ p {
 .about,
 .services,
 .contact {
+  overflow: hidden;
+
+  &__inner {
+    position: relative;
+  }
+}
+
+.home {
   min-height: 100vh;
 }
 
@@ -87,13 +113,14 @@ p {
 }
 
 // Marca de Agua
-.marcaAgua {
+.marca-agua {
   background-color: white;
   position: absolute;
   margin: auto;
-  left: 0; right: 0;
   top: 0; bottom: 0;
+  left: -1000px; right: -1000px;
   height: 100%;
+  width: 100vw;
   overflow: hidden;
 
   svg {
@@ -101,8 +128,14 @@ p {
     height: 100%;
     width: 100%;
   }
+
+  z-index: 0;
 }
 
+.solapar {
+  position: relative;
+  z-index: 1;
+}
 // MÓDULO SERVICES:
 .services {
   background-color: $color-base;
@@ -117,7 +150,6 @@ p {
 
   &__item {
     flex-shrink: 1;
-    min-height: 100vh;
     padding-bottom: 20px;
 
     &--left {
@@ -133,6 +165,121 @@ p {
         max-width: 350px;
         border-radius: 5px;
       }
+    }
+  }
+}
+
+// Sección de contacto:
+.contact {
+  h1, h2, h3, h4, h5, h5, h6 {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  } 
+
+  &__inner {
+    width: $width;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+}
+
+// Cajas flexibles:
+.flex {
+  display: flex;
+
+  // Propiedades temporales:
+  min-height: 120px;
+
+  // Elementos:
+  &__item {
+    flex-shrink: 1;
+
+    &--left {
+      flex-grow: 1;
+    }
+
+    &--right {
+      flex-grow: 0;
+    }
+
+    &--auto {
+      flex-grow: auto;
+    }
+
+    &--3 {
+      --width: 320px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &:nth-of-type(2) {
+        width: var(--width);
+      }
+
+      max-width: var(--width);
+    }
+  }
+
+  // Modificadores:
+  &--center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--end {
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+  }
+
+  &--logo {
+    margin: 0 auto;
+    max-width: 800px;
+    width: $width;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &--between {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--default {
+    width: $width;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+}
+
+// Thumbnails:
+.thumbnail {
+  max-width: 350px;
+}
+
+// Pie de página:
+.footer {
+  position: relative;
+  background-color: $color-derivado;
+  color: white;
+
+  font: {
+    size: 0.9rem;
+  }
+
+  svg {
+    max-width: 250px;
+  }
+
+  &__enlace {
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

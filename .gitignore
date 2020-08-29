@@ -6,5 +6,5 @@ Herramientas
 *.sql
 upload
 uploads
-multimedia/video
-multimedia/video/*
+*.mp4
+*.mkv
