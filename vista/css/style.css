@@ -245,6 +245,11 @@ aside {
   position: relative;
 }
 
+h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #2d2b74;
+}
+
 .header {
   border-bottom: 5px solid #2d2b74;
   --padding: 5px;
@@ -258,12 +263,16 @@ aside {
 .parrafo--title {
   padding: 0;
   margin: 0;
+  font-weight: bold;
 }
 .parrafo--email {
   margin-top: 0;
 }
 .parrafo--email:last-of-type {
   margin-bottom: 0;
+}
+.parrafo--text {
+  margin-top: 0;
 }
 
 .fondo-animado {
@@ -314,6 +323,9 @@ p {
 .services__inner,
 .contact__inner {
   position: relative;
+  --padding: 30px;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
 }
 
 .home {
@@ -429,6 +441,13 @@ p {
 .flex__item--auto {
   flex-grow: auto;
 }
+.flex__item--1 {
+  --size: 150px;
+  flex-grow: 1;
+  min-width: var(--size);
+  min-height: calc(var(--size)*0.1);
+  padding-right: 10px;
+}
 .flex__item--3 {
   --width: 320px;
   flex-grow: 0;
@@ -513,6 +532,10 @@ p {
 .redes-sociales__item svg {
   width: var(--diametro);
   height: var(--diametro);
+}
+
+.bloque {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
