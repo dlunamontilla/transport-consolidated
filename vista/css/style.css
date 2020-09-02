@@ -538,4 +538,22 @@ p {
   margin-top: 40px;
 }
 
+.patrocinadores {
+  --diametro: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+.patrocinadores__item {
+  --padding: 10px;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+.patrocinadores svg {
+  width: var(--diametro);
+  height: var(--diametro);
+}
+
 /*# sourceMappingURL=style.css.map */
