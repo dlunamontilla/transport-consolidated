@@ -37,6 +37,8 @@ h2, h3, h4, h5, h6 {
 
   &--text {
     margin-top: 0;
+    text-align: justify;
+    padding-right: 10px;
   }
 }
 
@@ -152,7 +154,7 @@ p {
     flex-shrink: 1;
 
     img {
-      max-width: 300px;
+      max-width: var(--image-width);
       border-radius: 3px;
     }
   }
@@ -402,4 +404,9 @@ p {
     height: var(--diametro);
 
   }
+}
+
+// Anchura de imagen:
+.image-width {
+  width: var(--image-width);
 }

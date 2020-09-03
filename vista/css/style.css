@@ -6,6 +6,7 @@
 :root {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
+  --image-width: 350px;
 }
 
 html, body {
@@ -272,6 +273,8 @@ h2, h3, h4, h5, h6 {
 }
 .parrafo--text {
   margin-top: 0;
+  text-align: justify;
+  padding-right: 10px;
 }
 
 .fondo-animado {
@@ -378,7 +381,7 @@ p {
   flex-shrink: 1;
 }
 .info__image img {
-  max-width: 300px;
+  max-width: var(--image-width);
   border-radius: 3px;
 }
 
@@ -574,6 +577,10 @@ p {
 .patrocinadores svg {
   width: var(--diametro);
   height: var(--diametro);
+}
+
+.image-width {
+  width: var(--image-width);
 }
 
 .formulario {
