@@ -247,7 +247,6 @@ aside {
 
 h2, h3, h4, h5, h6 {
   font-weight: bold;
-  color: #2d2b74;
 }
 
 .header {
@@ -283,7 +282,7 @@ h2, h3, h4, h5, h6 {
   top: 0;
   bottom: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #b22234;
 }
 .fondo-animado::after {
@@ -328,8 +327,29 @@ p {
   padding-bottom: var(--padding);
 }
 
+.about h2, .about h3, .about h4, .about h5, .about h6,
+.contact h2,
+.contact h3,
+.contact h4,
+.contact h5,
+.contact h6 {
+  color: #2d2b74;
+}
+
 .home {
   min-height: 100vh;
+}
+.home__inner {
+  min-height: 100px;
+  padding: 10px;
+  margin: 0 auto;
+  width: calc(100% - 20px);
+  max-width: 1200px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
 }
 
 .content-inner {
@@ -554,6 +574,42 @@ p {
 .patrocinadores svg {
   width: var(--diametro);
   height: var(--diametro);
+}
+
+.formulario {
+  max-width: 360px;
+  background-color: rgba(31, 29, 79, 0.6);
+  padding: 20px;
+  color: white;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+.controls__item {
+  --padding: 3px;
+  width: 100%;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+.controls__item [type="text"],
+.controls__item [type="pasword"],
+.controls__item [type="number"],
+.controls__item [type="tel"] {
+  width: 100%;
+  background-image: none;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.group-button {
+  --padding: 10px;
+  margin-top: var(--padding);
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
 }
 
 /*# sourceMappingURL=style.css.map */
