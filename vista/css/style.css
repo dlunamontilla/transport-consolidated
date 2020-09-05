@@ -583,6 +583,12 @@ p {
   width: var(--image-width);
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 .formulario {
   max-width: 360px;
   background-color: rgba(31, 29, 79, 0.6);
@@ -610,6 +616,16 @@ p {
   border: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
+  outline: medium none;
+  transition: 300ms ease;
+  font: inherit;
+}
+.controls__item [type="text"]:focus,
+.controls__item [type="pasword"]:focus,
+.controls__item [type="number"]:focus,
+.controls__item [type="tel"]:focus {
+  border-bottom: 1px solid green;
+  color: #8e8cd4;
 }
 
 .group-button {
@@ -617,6 +633,26 @@ p {
   margin-top: var(--padding);
   padding-top: var(--padding);
   padding-bottom: var(--padding);
+}
+
+.button {
+  border: 0;
+  border-radius: 4px;
+  height: 30px;
+  min-width: 100px;
+  padding: 0 10px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  background-color: var(--button-background);
+  color: var(--button-text);
+  transition: 300ms ease;
+}
+.button:not([class*="button--"]) {
+  --button-background: #2d2b74;
+  --button-text: white;
+}
+.button--success {
+  --button-background: #008000;
 }
 
 /*# sourceMappingURL=style.css.map */

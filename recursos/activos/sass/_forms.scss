@@ -29,14 +29,53 @@
       border: 0;
       border-bottom: 1px solid rgba(white, 0.2);
       color: white;
+      outline: medium none;
+      transition: 300ms ease;
+      font: inherit;
+      
+      &:focus {
+        border-bottom: 1px solid green;
+        color: lighten( $color-base, 38 );
+      }
     }
   }
 }
 
+// Contenedor de botones por grupo.
 .group-button {
   --padding: 10px;
 
   margin-top: var(--padding);
   padding-top: var(--padding);
   padding-bottom: var(--padding);
+}
+
+// Apariencia del botón:
+.button {
+  &:not([class*="button--"]) {
+    --button-background: #{$color-base};
+    --button-text: white;
+  }
+
+  // Apariencia General:
+  border: 0;
+  border-radius: 4px;
+  height: 30px;
+  min-width: 100px;
+  padding: 0 10px;
+  font: {
+    family: inherit;
+    size: 0.9rem;
+  }
+
+  background-color: var(--button-background);
+  color: var(--button-text);
+
+  // Transiciones generales:
+  transition: 300ms ease;
+
+  // Modificadores:
+  &--success {
+    --button-background: #008000;
+  }
 }
